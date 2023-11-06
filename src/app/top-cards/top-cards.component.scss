@@ -1,0 +1,47 @@
+.card {
+    height: 115px;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .card-body{
+   margin-top: -25px;
+  }
+  .card-content{
+    margin-bottom: 17px;
+    margin-top: -4px;
+  }
+  .card-text:last-child {
+    margin-top: -10px;
+    font-size: 13px;
+}
+  
+  .card:hover {
+    background-color: rgb(73, 73, 246);
+    color: white;
+  }
+  
+  .percentage-logo {
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 0;
+    color: rgb(73, 73, 246);
+  }
+  
+  .card:hover .percentage-logo {
+    color: white;
+  }
+  
+  .card-icon {
+    margin: 0px;
+    font-size: 35px;
+    font-weight: 500;
+  }
+  
+  .card-icon i {
+    color: gray;
+    font-size: 2rem;
+  }
+  
+  .card:hover .card-icon i {
+    color: white;
+  }

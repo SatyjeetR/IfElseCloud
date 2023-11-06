@@ -1,0 +1,29 @@
+.custom-container {
+  padding: 20px;
+  margin: 23px 0px 20px 0;
+  background-color: #fff;
+}
+.user-name h6{
+  margin: 6px 6px 7px 6px;
+  font-size: 12px;
+  width: max-content;
+}
+.user-name p{
+  margin: 4px 1px 0px 6px;
+  font-size: 12px;
+  width: max-content;
+
+}
+
+.circular-image {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+}
+
+.card {
+  height: 57px;
+  padding: 6px 5px 2px 4px;
+  margin: 2px 5px 4px 4px;
+}

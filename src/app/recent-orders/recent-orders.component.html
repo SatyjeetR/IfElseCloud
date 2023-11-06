@@ -1,0 +1,39 @@
+<div class="container custom-container" style="height: 350px; overflow-y: auto;">
+  <h4 class="mt-1 mb-2">Recent Orders</h4>
+  <table class="table table-striped custom-table">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Customer</th>
+          <th>Products</th>
+          <th>Delivery Date</th>
+          <th>Status</th>
+          <th>Tracking No#</th>
+          <th>Shipping</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of recentOrdersData; let i = index">
+          <td>{{ counter + i }}</td>
+          <td>{{ order.name }}</td>
+          <td>{{ order.product }}</td>
+          <td>{{ order.delivery_date | date: 'dd-MMM-yyyy' }}</td>
+          <td  class="text-center">
+            <button type="button" class="btn btn-sm btn-{{ order.status === 'Paid' ? 'success' : (order.status === 'Failed' ? 'danger' : 'info') }}">
+              {{ order.status }}
+            </button>
+          </td>
+          <td>{{ order.tracking_no }}</td>
+          <td>{{ order.shipping ? 'Yes' : 'No' }}</td>
+          <td>
+            <button type="button" class="btn btn-light" style="border-collapse: collapse;" (click)="openPopup(order)">
+              <i class="pi pi-times" style="font-size: 1rem"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </table>
+</div>

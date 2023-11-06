@@ -1,0 +1,34 @@
+<div class="top-navigation navbar navbar-expand-lg navbar-light bg-light">
+  <div class="col-lg-1">
+    <div class="toggler" (click)="showAlert('Toggler icon clicked')">
+      <i class="pi pi-bars" style="font-size: 1.5rem"></i>
+    </div>
+  </div>
+  <div class="search-bar col-lg-7">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search..." />
+      <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+  <div class="menu-icons col-lg-2">
+    <div class="d-flex justify-content-around">
+      <h6 (click)="showAlert('ENG clicked')">ENG</h6>
+      <div class="icon" (click)="showAlert('Comment icon clicked')">
+        <i class="pi pi-comment p-badge-dot" pBadge style="font-size: 2rem" severity="success"></i>
+      </div>
+      <div class="icon" (click)="showAlert('Bell icon clicked')">
+        <i class="pi pi-bell p-badge-dot" pBadge style="font-size: 2rem" severity="danger"></i>
+      </div>
+    </div>
+  </div>
+  <div class="menu-icons col-lg-2">
+    <div class="d-flex justify-content-around">
+      <div class="profile d-flex align-items-center" (click)="showAlert('Profile photo clicked')">
+        <img src="../../assets/user-40-1.jpg" alt="Profile Photo" class="square" width="35" height="35" />
+      </div>
+      <div>
+        <span class="ml-2" (click)="showAlert('Profile name clicked')">Satyjeet Rakate</span>
+      </div>
+    </div>
+  </div>
+</div>

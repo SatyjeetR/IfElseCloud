@@ -1,0 +1,21 @@
+.container.custom-container {
+  padding: 20px;
+  margin: 24px 0;
+  background-color: #fff;
+}
+
+.table-responsive {
+  height: 190px; 
+  overflow-y: auto;
+  max-width: 100%;
+}
+
+.table {
+  font-size: 11px;
+}
+
+.table th,
+.table td {
+  padding: 10px 12px; 
+  text-align: center;
+}
